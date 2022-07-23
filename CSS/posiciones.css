@@ -1,0 +1,60 @@
+body {
+    background-image: url(/img/IMG_6092.jpg);
+    background-position: 30px 80px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.contenedor {
+    position: relative;
+    top: 100px;
+    left: 40px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: aquamarine;
+}
+
+.bloquerojo {
+    position: sticky;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    z-index: 10;
+}
+
+.bloqueazul {
+    position: fixed;
+    width: 120px;
+    height: 75px;
+    background-color: blue;
+    z-index: 8;
+}
+
+.bloqueverde {
+    position: absolute;
+    top: 20px;
+    left: 70px;
+
+    width: 60px;
+    height: 130px;
+    background-color: #008000;
+    z-index: 1;
+}
+
+@media screen and (max-width:500px) {
+
+    .bloqueverde {
+       visibility: hidden;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    .bloqueverde {
+        position: absolute;
+        top: 0x;
+        left: 30px;
+        z-index: 20;
+    }
+}
